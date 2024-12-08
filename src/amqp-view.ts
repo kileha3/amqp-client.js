@@ -7,7 +7,6 @@ import type { AMQPProperties, Field } from './amqp-properties.js'
  * @ignore
  */
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 export class AMQPView extends DataView {
   getUint64(byteOffset: number, littleEndian?: boolean) : number {

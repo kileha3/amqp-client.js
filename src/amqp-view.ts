@@ -6,7 +6,9 @@ import type { AMQPProperties, Field } from './amqp-properties.js'
  * Get methods returns the value read and how many bytes it used.
  * @ignore
  */
-//@ts-ignore
+
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 export class AMQPView extends DataView {
   getUint64(byteOffset: number, littleEndian?: boolean) : number {
     // split 64-bit number into two 32-bit (4-byte) parts
